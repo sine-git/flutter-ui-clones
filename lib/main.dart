@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:ui_clones/app-project/app-project-comments.dart';
 import 'package:ui_clones/app-project/app-project.dart';
+import 'package:ui_clones/chat/chat-binding.dart';
 import 'package:ui_clones/dependancies-injection/bindings.dart';
 import 'package:ui_clones/gym/detail-page.dart';
 import 'package:ui_clones/routing/routes.dart';
@@ -12,6 +13,7 @@ import 'package:ui_clones/vanessa/country-detail-page.dart';
 
 void main() {
   AllBindings().dependencies();
+  ChatBinding().dependencies();
   runApp(const MyApp());
 }
 
